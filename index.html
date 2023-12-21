@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Bookmark</title>
+        <link rel="stylesheet" href="css/all.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        
+    </head>
+    <body>
+
+        <section class="w-100 h-100 ">
+
+            <div class="overlay position-fixed d-none justify-content-center align-items-center" id="overlay">       
+                <div class="child bg-white d-flex flex-column justify-content-center  p-5">
+                    <div class="circles d-flex  position-relative">
+                        <span class="rounded-circle me-2"></span>
+                        <span class="rounded-circle me-2"></span>
+                        <span class="rounded-circle me-2"></span>
+                        <i class="fa-solid fa-xmark text-black position-absolute cl"></i>
+                    </div>
+                    <h5 class="pb-3 pt-4">Site Name or Url is not valid, Please follow the rules below :</h5>
+                    <p><i class="fa-regular fa-circle-right"></i> Site name must contain at least 3 characters</p>
+                    <p><i class="fa-regular fa-circle-right"></i> Site URL must be a valid one</p>
+                </div>
+            </div>
+            <div class="container py-5 position-relative">
+                <h1 class="mx-auto mb-4 ">Bookmarker</h1>
+                <div class="bookmark w-100 py-4">
+                        <h2 class="text-center mb-5 fw-bold">
+                            <i class="fa-solid fa-bookmark"></i> 
+                             Bookmarke your favorite sites
+                           <i class="fa-solid fa-bookmark"></i>
+                        </h2>
+                    <div>
+                        <i class="fa-solid fa-book-bookmark pe-2 "></i>
+                        <label for="siteName" class="fw-bold mb-2">Site Name</label>
+                        <input type="text" class="form-control mb-4" id="siteName" placeholder="Bookmark Name">
+
+                        <i class="fa-solid fa-link pe-2"></i>
+                        <label for="siteUrl" class="fw-bold mb-2">Site URL</label>
+                        <input type="text" class="form-control" id="siteUrl" placeholder="Website URL">
+
+                        <div class="d-flex justify-content-center">
+                            <button onclick="addBookmark()" class="btn btn-danger px-5 mt-4 btn1"> Submit</button>
+                        </div>
+                       
+                       
+                    </div>
+
+                </div>
+
+                <table class="table m-auto my-5 text-center">
+                    <thead>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="tableBody">
+
+    
+  
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <script src=" js/bootstrap.bundle.min.js"></script>
+        <script src="js/mine.js"></script>
+    </body>
+</html>
